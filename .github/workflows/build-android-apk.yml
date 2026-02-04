@@ -97,7 +97,7 @@ jobs:
         working-directory: mobile-app/android
         run: |
           chmod +x gradlew
-          ./gradlew assembleRelease --no-daemon
+          ./gradlew assembleRelease --no-daemon --stacktrace
       
       - name: Upload APK artifact
         uses: actions/upload-artifact@v4
